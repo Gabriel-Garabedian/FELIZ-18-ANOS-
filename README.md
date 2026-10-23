@@ -22,7 +22,7 @@ npm run preview
 - `public/photos/memoria-01.jpg` a `memoria-14.jpg`: álbum principal e álbum expansível. Toque para ver o enquadramento completo.
 - `public/photos/foto-final.jpg`: a foto mais especial (vertical).
 - `public/photos/historia-01.jpg` a `historia-03.jpg`: fotos do site anterior associadas ao RioMar, Natal e viagem, respectivamente.
-- `public/audio/musica.mp3`: música fornecida por você, autorizada. Depois defina `musicAvailable: true`.
+- `public/audio/musica.mp3`: arranjo instrumental próprio de “Parabéns a Você”, já incluído e ativado. Pode ser substituído por outro arquivo autorizado.
 
 Fotos reais incluídas: 16 imagens distintas do ZIP e três do repositório anterior, cerca de 2,5 MB. Uma duplicata da praia foi omitida. Barras pretas de captura de tela foram removidas das duas cópias da praia, preservando a área fotográfica. Originais permanecem intactos no ZIP e no repositório de referência. Se remover uma foto, aparece uma página de álbum “um espaço guardado pra nós”, sem requisição quebrada. Após adicionar imagens, reinicie o servidor e reconstrua a versão de produção. As duas famílias de fontes são servidas localmente.
 
@@ -36,7 +36,17 @@ A intro avança automaticamente em aproximadamente 27 segundos e pode ser pulada
 
 Site publicado: https://gabriel-garabedian.github.io/FELIZ-18-ANOS-/
 
-Build estático em `dist/`. Fotos e textos já integrados; falta apenas fornecer a música pessoal e ativá-la em `src/config.ts`.
+Build estático em `dist/`. Fotos, textos e instrumental de aniversário integrados.
+
+## Cartão com QR code e instrumental
+
+- `public/presente/convite-victoria.png`: cartão 1080 × 1440 para mostrar no celular ou imprimir.
+- `public/presente/convite-victoria.svg`: versão vetorial com as fontes embutidas.
+- `public/presente/qrcode-victoria.png`: QR isolado, 900 × 900.
+- O QR aponta diretamente para o endereço publicado, sem encurtador ou serviço externo. PNG completo e versão reduzida a 360px validados por leitura com jsQR.
+- `scripts/create-qr-card.mjs` gera o SVG e o QR; `scripts/render-qr-card.js` renderiza o cartão em PNG com Playwright; `node scripts/verify-qr.mjs` confere o destino.
+- `scripts/create-birthday-music.mjs` gera o arranjo sintetizado em WAV em `output/audio/`. Para converter: `ffmpeg -i output/audio/parabens-instrumental.wav -codec:a libmp3lame -q:a 3 public/audio/musica.mp3`. Não é usada uma gravação de terceiros. Referência da melodia: [partitura tradicional](https://mbcb.org/wp-content/uploads/2026/02/Happy-Birthday-in-G.pdf).
+- Instrumental sem voz, aproximadamente 71 segundos e 340 KB. Mantém início por clique, fade de 3,2 segundos, volume alvo de 35%, loop e controle de som.
 
 ## GitHub Pages
 

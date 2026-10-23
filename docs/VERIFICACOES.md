@@ -13,3 +13,7 @@ Revisão visual: as fotos reais substituem os espaços reservados; texto e legen
 Teste de produção adicional: intro automática concluiu sem clique de avanço, álbum expandido sem overflow nas cinco larguras, 19 caminhos de fotografias responderam HTTP 200 com image/jpeg e nenhum erro de console ou página. Build para GitHub Pages usa `DEPLOY_BASE=/FELIZ-18-ANOS-/`, incluindo caminhos das fotos, lightbox, áudio e fontes.
 
 GitHub Actions: execução 39974725211 concluída com sucesso em 23/10/2026. Commit de implementação `a3a55e2c48164d9ece07c7870092270d37c69d6d`. Site público respondeu HTTP 200 com título correto em https://gabriel-garabedian.github.io/FELIZ-18-ANOS-/ .
+
+Atualização instrumental e QR: MP3 real de 71,048798 segundos, 339704 bytes, mono 44100 Hz. FFmpeg mediu pico -2,2 dB e média -16,4 dB. Não houve reprodução antes do clique; volume aumentou até 0,35; tempo de reprodução avançou; pausa e retomada funcionaram; loop ativado; zero erros após correção do limite inferior do fade. O teste anterior com áudio sintético foi complementado por reprodução do arquivo efetivo.
+
+`node scripts/verify-qr.mjs`: QR isolado de 900 × 900, cartão PNG de 1080 × 1440 e cartão reduzido a 360px decodificados para a URL exata do presente. Cartão inspecionado visualmente. Não foi realizada leitura por câmera de aparelho físico.

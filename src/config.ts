@@ -14,8 +14,8 @@ export const config = {
   ],
   musicPath: "/audio/musica.mp3",
   musicVolume: 0.35,
-  // Ative depois de colocar public/audio/musica.mp3. Evita solicitar arquivo ausente.
-  musicAvailable: false,
+  // Arranjo instrumental próprio de Parabéns a Você, sem voz.
+  musicAvailable: true,
   // Memórias reais do site anterior e datas confirmadas por Gabriel.
   showTimeline: true,
 };

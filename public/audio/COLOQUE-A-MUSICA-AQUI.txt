@@ -1,3 +1,3 @@
-Coloque o arquivo autorizado em musica.mp3 e altere musicAvailable para true em src/config.ts.
+musica.mp3 já contém um arranjo instrumental próprio de Parabéns a Você, ativado em src/config.ts.
 O áudio só começa no toque de abertura. Volume alvo: 35%, com entrada progressiva em 3,2 segundos.
-Nenhuma música é baixada ou incluída automaticamente.
+O instrumental foi sintetizado localmente; não utiliza gravação ou samples de terceiros. Para trocar, substitua musica.mp3 por um arquivo autorizado.

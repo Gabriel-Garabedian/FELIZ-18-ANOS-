@@ -28,8 +28,10 @@ export function useMusic() {
       setUnavailable(false);
       const start = performance.now();
       const fade = (now: number) => {
-        track.volume = Math.min((now - start) / 3200, 1) * config.musicVolume;
-        if (now - start < 3200) frame.current = requestAnimationFrame(fade);
+        // The first RAF timestamp can precede performance.now() within a frame.
+        const progress = Math.max(0, Math.min((now - start) / 3200, 1));
+        track.volume = progress * Math.max(0, Math.min(config.musicVolume, 1));
+        if (progress < 1) frame.current = requestAnimationFrame(fade);
       };
       frame.current = requestAnimationFrame(fade);
     } catch {
