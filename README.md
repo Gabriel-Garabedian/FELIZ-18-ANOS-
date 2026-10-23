@@ -34,7 +34,9 @@ A intro avança automaticamente em aproximadamente 27 segundos e pode ser pulada
 
 ## Entrega
 
-Build estático em `dist/`, publicável em hospedagens estáticas. O cadastro Sites começa privado: se quiser um link para Victoria abrir fora da sua conta, será necessário configurar o acesso apropriado. Confira as fotos, a música e os textos antes de compartilhar.
+Site publicado: https://gabriel-garabedian.github.io/FELIZ-18-ANOS-/
+
+Build estático em `dist/`. Fotos e textos já integrados; falta apenas fornecer a música pessoal e ativá-la em `src/config.ts`.
 
 ## GitHub Pages
 

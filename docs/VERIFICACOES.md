@@ -11,3 +11,5 @@ Scripts de verificação em `scripts/`: usar com Playwright CLI `run-code --file
 Revisão visual: as fotos reais substituem os espaços reservados; texto e legendas mantêm respiro; não há grid 3x3 no álbum principal. Movimento reduzido remove entradas espaciais; o scroll é nativo e a leitura não depende de uma animação terminar. Direção e exceções ao sorteio de composição documentadas em ART-DIRECTION.md.
 
 Teste de produção adicional: intro automática concluiu sem clique de avanço, álbum expandido sem overflow nas cinco larguras, 19 caminhos de fotografias responderam HTTP 200 com image/jpeg e nenhum erro de console ou página. Build para GitHub Pages usa `DEPLOY_BASE=/FELIZ-18-ANOS-/`, incluindo caminhos das fotos, lightbox, áudio e fontes.
+
+GitHub Actions: execução 39974725211 concluída com sucesso em 23/10/2026. Commit de implementação `a3a55e2c48164d9ece07c7870092270d37c69d6d`. Site público respondeu HTTP 200 com título correto em https://gabriel-garabedian.github.io/FELIZ-18-ANOS-/ .
