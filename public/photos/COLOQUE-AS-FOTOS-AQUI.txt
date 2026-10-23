@@ -1,0 +1,10 @@
+As fotos reais já foram incluídas.
+foto-01.jpg — retrato de Victoria, capa.
+foto-final.jpg — o beijo no espelho, encerramento.
+memoria-01.jpg até memoria-14.jpg — cinco fotos principais e nove no álbum expansível.
+historia-01.jpg — RioMar, do site anterior.
+historia-02.jpg — Natal, do site anterior.
+historia-03.jpg — viagem, do site anterior.
+Para trocar imagens ou legendas: src/data/memories.ts.
+Use fotos reais com autorização. Recomenda-se JPEG comprimido, até 1600px no maior lado e 350KB.
+Os caminhos são verificados durante o build. Depois de adicionar fotos, reinicie o dev server ou rode npm run build. Uma foto repetida no ZIP foi omitida; as demais estão integradas.

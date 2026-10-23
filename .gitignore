@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.tsbuildinfo
+output/
+.playwright-cli/
+.openai/local*
+.openai/
+.taste-skill/

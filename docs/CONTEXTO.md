@@ -1,0 +1,17 @@
+# Contexto — aniversário da Victoria
+
+Atualizado em 23/10/2026.
+
+- Projeto: `C:/Users/Antonio Pedro/Projects/victoria-18`. React, TypeScript, Vite, CSS e GSAP. Duas fontes locais: Cormorant Garamond e Manrope.
+- Presente de Gabriel para Victoria, 18 anos. Conceito: carta que ganha vida. Preto profundo, rubro e papel quente. Apelidos confirmados: minha cetinha, minha Rubro Negrazinha, minha princesa, meu amor, minha deusa.
+- Gabriel confirmou diretamente: conheceram-se em **01/01/2024**; começaram a namorar em **20/09/2025**. Não confundir as duas datas.
+- ZIP fornecido: `C:/Users/Antonio Pedro/Downloads/WhatsApp Unknown 2026-10-23 at 11.36.25.zip`. 17 imagens, uma duplicata da praia; 16 fotos distintas integradas. Arquivo original intacto. Três fotos adicionais do site anterior, com associação original aos marcos RioMar/Natal/viagem. Total 19 imagens, cerca de 2,5 MB.
+- Site anterior: https://gabriel-garabedian.github.io/dia-dos-namorados/ . Código consultado em https://github.com/Gabriel-Garabedian/dia-dos-namorados . Clone de referência em `C:/Users/Antonio Pedro/Projects/victoria-referencia`.
+- RioMar, primeira vez dormindo na casa dele, Natal de 2025 e viagem de 14/02/2026 estão no código do site anterior. Nova carta incorpora esses fatos, sem copiar sua carta antiga.
+- A foto da praia veio como captura de tela; barras pretas removidas da cópia de apresentação. Não foram alteradas as pessoas. Fotos inteiras acessíveis em diálogo no álbum.
+- Música não fornecida: nem ZIP nem repositório têm áudio. Preparado `public/audio/musica.mp3`, com `musicAvailable: false` em `src/config.ts`. Não baixar música automaticamente.
+- Verificações: `npm run build` passou; Chromium via Playwright em 360/390/430/768/1440 sem overflow; bilhete final, Escape, easter egg, nove fotos extras, abertura de foto e sete passos da intro com reduced-motion passaram. Áudio testado com WAV sintético interceptado apenas no navegador: sem reprodução antes do clique, fade até 0,35, pausa/retomada funcionando. Arquivo musical real e aparelhos físicos não testados.
+- Inspector da skill de design não iniciou o Chrome (saída antecipada); inspeção visual e medidas feitas com Playwright como alternativa. HMR registrou erros transitórios enquanto Prettier regravava os arquivos; nova navegação e build final sem os erros, teste de produção separado.
+- Site privado cadastrado no Sites: `appgprj_6adb6fae45ec8191a99511bacd95b67e`, manifesto em `.openai/hosting.json`. Ainda não publicado: terminal TTY do executor Windows falhou com acesso negado ao iniciar processo; modo sem TTY encerra stdin antes de receber credencial. Não recriar cadastro. Nenhuma credencial registrada em arquivo. Código local completo disponível independentemente do Sites.
+- Textos em `src/data/messages.ts`, memórias/fotos em `src/data/memories.ts`, configuração em `src/config.ts`. README com instruções.
+- Gabriel criou o repositório público `https://github.com/Gabriel-Garabedian/FELIZ-18-ANOS-.git` e pediu explicitamente o envio de tudo ao terminar. Git local já possui autenticação para essa conta (não registrar credenciais). GitHub CLI não está no PATH; usar Git para push e API com credencial do helper apenas em memória quando necessário. Workflow do Pages em `.github/workflows/deploy.yml`; base `/FELIZ-18-ANOS-/` via `DEPLOY_BASE`, helpers de assets respeitam a base. `.openai` fica apenas local e ignorado no repositório GitHub.

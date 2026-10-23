@@ -1,0 +1,3 @@
+Coloque o arquivo autorizado em musica.mp3 e altere musicAvailable para true em src/config.ts.
+O áudio só começa no toque de abertura. Volume alvo: 35%, com entrada progressiva em 3,2 segundos.
+Nenhuma música é baixada ou incluída automaticamente.
